@@ -1,0 +1,146 @@
+.c {
+  height: 100vh;
+  position: relative;
+  background-color: #777;
+  z-index: 2;
+}
+
+.c-bg {
+  background-image: var(--gradient);
+  background-size: 200%;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  animation: bg-animation 2s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.c-wrapper {
+  display: flex;
+  padding: 50px;
+}
+.c-left {
+  flex: 1;
+}
+
+.c-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: auto;
+}
+
+.c-title {
+  font-size: 4.5rem;
+  margin: 20px;
+  width: 80%; /*   este 80% din marimea c-left-ului */
+}
+.c-info-item {
+  display: flex;
+  margin: 50px 0px;
+  font-weight: 900;
+  font-size: 25px;
+  width: 70%;
+}
+.c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.c-desc {
+  font-size: 1.2rem;
+}
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0;
+  font-size: 1rem;
+  padding-left: 10px;
+  background-color: rgb(255, 255, 255);
+}
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 1rem;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.submit {
+  width: 10rem;
+  border: none;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 3px;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+   transition: all 0.5s ease;
+}
+.submit:hover
+{
+    color: white;
+    background-image:var(--gradient) ;
+}
+ 
+
+p {
+  font-size: 1.1rem;
+}
+.airplane {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 480px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+
+  .c-title {
+    font-size: 30px;
+  }
+
+  .c-info-item {
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .c-desc {
+    display: none;
+  }
+
+  form {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
