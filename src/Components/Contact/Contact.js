@@ -5,6 +5,9 @@ import email from "../../assets/email.svg";
 import address from "../../assets/address.svg";
 import airplane from "../../assets/airplane.svg";
 import emailjs from "@emailjs/browser";
+import {Fireworks} from "../Utils/Fireworks";
+import { useEffect } from "react";
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -22,6 +25,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset();
           setDone(true);
         },
         (error) => {
@@ -30,6 +34,7 @@ const Contact = () => {
       );
   };
 
+ 
   return (
     <div className="c">
       <div className="c-bg"></div>
@@ -57,15 +62,15 @@ const Contact = () => {
             your ideas to develop your dream application.
           </div>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="user_name" />
-            <input type="text" placeholder="Subject" name="user_subject" />
-            <input type="text" placeholder="Email" name="user_email" />
-            <textarea rows="5" placeholder="Message" name="message" />
+            <input type="text" placeholder="Name" name="user_name" required />
+            <input type="text" placeholder="Subject" name="user_subject" required />
+            <input type="text" placeholder="Email" name="user_email" required />
+            <textarea rows="5" placeholder="Message" name="message" required />
             <button className="submit">
               <p>Hit me up</p> 
               <img src={airplane} alt="" className="airplane"></img>
             </button>
-            {done && "Thank you..."}
+            {done && Fireworks()}
           </form>
         </div>
       </div>

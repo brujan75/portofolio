@@ -2,12 +2,30 @@
   height: 100vh;
   color: rgba(235, 217, 217, 0.336);
   background-color: #777;
-  position: sticky;
   top: 0;
+  position: relative;
   z-index: -1;
 }
+.scroll {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  margin-left: -10px;
+  font-size: 1.3rem;
+  color: white;
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+}
+.mouse
+{
+  height: 80px;
+  margin-left: 10px;
+  transform: rotate(-90deg);
+}
+
 .info {
-  height: 50vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -89,9 +107,7 @@ h1 {
   background-size: 400%;
 }
 
-
-.name h2
-{
+.name h2 {
   font-size: 3rem;
   font-weight: 900;
   color: white;
@@ -135,4 +151,3 @@ h1 {
   display: flex;
   align-items: center;
 }
- 

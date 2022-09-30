@@ -1,8 +1,8 @@
 .c {
   height: 100vh;
   position: relative;
-  background-color: #777;
-  z-index: 2;
+  background: #fff;
+  z-index: 0;
 }
 
 .c-bg {
@@ -24,7 +24,7 @@
 }
 .c-wrapper {
   display: flex;
-  padding: 50px;
+  padding: 150px 50px;
 }
 .c-left {
   flex: 1;

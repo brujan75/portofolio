@@ -1,0 +1,143 @@
+.projects
+{
+    height: 100vh;
+     position: relative;
+    /*
+    background: rgb(101,34,195);
+    background: linear-gradient(0deg, rgba(101,34,195,1) 67%, rgba(85,85,85,1) 100%); */
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 3%, rgba(101,34,195,1) 80%, rgba(85,85,85,1) 95%);
+    z-index: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.projects-title
+{
+    font-size: 2.5rem;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    color:#fff;
+    text-shadow: 2px 2px 2px black;
+}
+.projects-cards
+{
+    display: flex;    
+    gap: 200px;
+    color: white;
+}
+
+.projects-card
+{
+  background-color:#1c4c7d;
+    height: 400px;
+    width: 500px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: .3s;
+}
+.projects-card:hover{
+  box-shadow: 0 0 25px #b26679;
+
+}
+ 
+.sitesimgs
+{
+    object-fit: fit;
+    width:400px;
+    height: 250px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.projects-card .buttons
+{
+    display: flex;
+    gap: 60px;
+    font-size: 1.5rem;
+}
+
+
+.projects-card .button-1
+{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    height: 60px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.projects-card .button-1::before,
+.projects-card .button-1::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+.button-1 {
+    overflow: hidden;
+  }
+  
+  .button-1:after {
+    left: -100%;
+    clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 300ms ease;
+  }
+  
+  .button-1:hover::after {
+    left: 100%;
+  }
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.projects-card .button-2
+{
+    background-color: #6522C3;
+    
+    border-radius: 5px;
+    color: white;
+    height: 60px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.projects-card .button-2::before,
+.projects-card .button-2::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+.button-2 {
+    overflow: hidden;
+  }
+  
+  .button-2:after {
+    left: -100%;
+    clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 300ms ease;
+  }
+  
+  .button-2:hover::after {
+    left: 100%;
+  }
