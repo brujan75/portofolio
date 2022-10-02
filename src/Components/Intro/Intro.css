@@ -1,5 +1,6 @@
 .intro {
   height: 100vh;
+  min-height: 800px;
   color: rgba(235, 217, 217, 0.336);
   background-color: #777;
   top: 0;
@@ -151,3 +152,114 @@ h1 {
   display: flex;
   align-items: center;
 }
+
+@media ( max-width: 1252px ) {
+  .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .i-title
+  {
+    margin-top: 0px;
+    z-index: 999;
+  }
+  .info .container
+  {
+    
+  }
+  .name
+  {
+    margin-top:130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media ( max-width: 992px ) {
+  .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .name
+  {
+    margin-top:130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+   
+}
+@media ( max-width: 768px ) {
+   
+
+  .name h1
+  {
+    font-size: 2.5rem;
+  }
+  .name h2
+  {font-size: 2rem;}
+  .scroll
+  {
+    margin-left: -60px;
+  }
+}
+
+
+@media ( max-width: 450px ) {
+  
+  .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .name
+  {
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+h1{
+padding-bottom: 20px;
+  }
+  .name h2
+  {
+    font-size: 1.5rem;
+  }
+  .animate__animated h1{
+    font-size: 2.5rem;
+  }
+
+  .i-title
+  {
+    z-index: 1;
+  }
+  .scroll
+  {
+    z-index: 1;
+    position: absolute;
+    bottom: -100px;
+    left: 40%;
+    transform: rotate(0deg);
+  }
+  .mouse
+{
+  height: 70px;
+  margin-left: 10px;
+  transform: rotate(0deg);
+}
+.container
+{
+  bottom:95px;
+}
+}
+
+ 

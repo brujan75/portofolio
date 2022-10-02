@@ -6,6 +6,7 @@ import Contact from "./Components/Contact/Contact";
 import Navbar from "./Components/Navbar/Navbar";
 import CircleLoader from "react-spinners/CircleLoader";
 import Skills from "./Components/Skills/Skills";
+import Backtotopbutton from "./Components/Backtotopbutton/Backtotopbutton";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -30,10 +31,11 @@ function App() {
       ) : (
         <>
           <Navbar />
+          <Backtotopbutton />
           <Intro />
           <About />
-          <Skills/>
-          <Projects/>
+          <Skills />
+          <Projects />
           <Contact />
         </>
       )}
