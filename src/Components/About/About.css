@@ -1,5 +1,7 @@
 .about {
   height: 100vh;
+  min-width: 460px;
+
   min-height: 800px;
   display: flex;
   z-index: 1;

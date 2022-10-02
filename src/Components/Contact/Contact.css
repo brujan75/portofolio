@@ -1,28 +1,13 @@
 .c {
   height: 100vh;
+  min-width: 460px;
   min-height: 800px;
   position: relative;
   background: #fff;
   z-index: 0;
 }
 
-.c-bg {
-  background-image: var(--gradient);
-  background-size: 200%;
-  width: 30px;
-  height: 100%;
-  position: absolute;
-  animation: bg-animation 2s infinite alternate;
-}
-
-@keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
-}
+ 
 .c-wrapper {
   display: flex;
   padding: 150px 50px;
@@ -149,3 +134,14 @@ p {
     margin-top: 10px;
   }
 }
+@media screen and (max-width: 1250px) {
+.c-info-item{
+  white-space: initial;
+  font-size: 1rem;
+}
+}
+@media screen and (max-width: 940px) {
+  input{
+    width: 100%;
+  };
+  }

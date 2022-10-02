@@ -1,5 +1,6 @@
 .projects {
   height: 100vh;
+  min-width: 460px;
   min-height: 800px;
   position: relative;
   background: rgb(255, 255, 255);

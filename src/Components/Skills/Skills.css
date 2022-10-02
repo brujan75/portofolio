@@ -1,5 +1,7 @@
 .skills {
   height: 100vh;
+  min-width: 460px;
+
   min-height: 800px;
   background-color: #555;
   display: flex;
@@ -379,9 +381,16 @@
 @media (max-width: 940px) {
 
   .skills-title {
-    top:100px
+    top:90px;
+  }
+  .skills-title h1{
+    font-size: 3rem;
+    margin-bottom: -10px;
   }
 }
+.skills-card {
+  height: 380px;
+  width: 380px;}
 
 @media (max-width: 450px) {
   .skills-card {
