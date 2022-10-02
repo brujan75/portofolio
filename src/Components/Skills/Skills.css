@@ -381,7 +381,7 @@
 @media (max-width: 940px) {
 
   .skills-title {
-    top:90px;
+    top:60px;
   }
   .skills-title h1{
     font-size: 3rem;
@@ -403,7 +403,7 @@
   margin: 5px;
 }
 .skills-title {
-  top:130px
+  top:75px
 }
 .skills-card-element {
   margin: 0px;
