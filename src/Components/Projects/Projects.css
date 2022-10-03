@@ -32,7 +32,7 @@
 }
 
 .projects-card {
-  background-color: #1c4c7d;
+  background-color: #1c4c7dc9;
   height: 400px;
   width: 500px;
   border-radius: 30px;
@@ -42,16 +42,25 @@
   flex-direction: column;
   gap: 20px;
   transition: 0.3s;
+  transform-style: preserve-3d;
+}
+.inner-element
+{
+  transform: translateZ(50px);
 }
 .projects-card:hover {
   box-shadow: 0 0 25px #b26679;
   margin-top: -12px;
 }
+.parallax-effect
+{
+  transform-style: preserve-3d;
+}
 
 .sitesimgs {
   object-fit: fit;
-  width: 400px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   border-radius: 20px;
   border: 1px solid black;
 }
@@ -148,11 +157,14 @@
     text-shadow: 1px 1px 2px black;
   }
   .projects-card {
-    background-color: red;
-    height: 100px;
+    height: 150px;
     width: 250px;
-    
+    background-color: transparent;
   }
+  .projects-card:hover {
+    box-shadow:none
+  }
+ 
   
   .sitesimgs
   {
@@ -161,7 +173,7 @@
     margin-top: -15px;
   }
   .projects-title {
-    top: 40px;
+    top: 20px;
   }
   .projects-card .button-1 {
 
